@@ -26,4 +26,9 @@ public class Person extends Node{
     Node getGreater(Node a, Node b) {
         return a.getKey()>b.getKey()?a:b;
     }
+
+    @Override
+    boolean isGreaterThan(Node b) {
+        return key>b.getKey();
+    }
 }

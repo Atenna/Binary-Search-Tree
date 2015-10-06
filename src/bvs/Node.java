@@ -20,6 +20,7 @@ public abstract class Node {
     
     abstract int getKey();
     abstract Node getGreater(Node a, Node b);
+    abstract boolean isGreaterThan(Node b);
     
     public Node getLeftChild() {
         return leftChild;

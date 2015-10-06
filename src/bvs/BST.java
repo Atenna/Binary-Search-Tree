@@ -11,12 +11,25 @@ public class BST {
     
     private Node root;
     
-    public BST(int value) {
-        root = new Node();
+    public BST() {
     }
     
-    public void insert(int a) {
-
+    public void insert(Node newRoot, int newKey) {
+        Node newLeaf = new Person(newKey);
+        if(this.root == null) {
+            root = newLeaf;
+        } 
+        else {
+            Node root       = newRoot;
+            Node rightChild = root.getRightChilds();
+            Node leftChild  = root.getLeftChild();
+                if(newLeaf.isGreaterThan(root)) {
+                    insert(rightChild, newKey);
+                }
+                else {
+                    insert(leftChild, newKey);
+                }
+        }
     }
     
     public Node find(int key) {
