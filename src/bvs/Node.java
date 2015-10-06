@@ -26,7 +26,7 @@ public abstract class Node {
         return leftChild;
     }
     
-    public Node getRightChilds() {
+    public Node getRightChild() {
         return rightChild;
     }
     
