@@ -22,7 +22,7 @@ public class BST {
         postorderList = new ArrayList<>();
     }
     
-    public void insert(Node node, int newKey) {
+    public void insert(int newKey) {
         Node newLeaf = new Person(newKey);
         if(this.root == null) {
             this.root = newLeaf;
@@ -104,17 +104,23 @@ public class BST {
         System.out.println(current.getKey()+" ");
     }
     
-    public void print() {
+    public void printInorder() {
         System.out.println("INORDER");
         inorder(root);
         for(int i= 0; i < inorderList.size();i++) {
             System.out.print(inorderList.get(i).getKey());
         }
+    }
+    
+    public void printPreorder() {
         System.out.println("PREORDER");
         preorder(root);
         for(int i= 0; i < preorderList.size();i++) {
             System.out.print(preorderList.get(i).getKey());
         }
+    }
+    
+    public void printPostorder() {
         System.out.println("POSTORDER");
         postorder(root);
         for(int i= 0; i < postorderList.size();i++) {

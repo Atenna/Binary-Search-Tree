@@ -12,10 +12,12 @@ package bvs;
 public class Main {
     public static void main(String[] args) {
         BST strom = new BST();
-        strom.insert(null, 1);
-        strom.insert(null, 5);
-        strom.insert(null, 3);
-        strom.insert(null, 7);
-        strom.print();
+        strom.insert(1);
+        strom.insert(5);
+        strom.insert(3);
+        strom.insert(7);
+        strom.printInorder();
+        strom.printPostorder();
+        strom.printPreorder();
     }
 }
