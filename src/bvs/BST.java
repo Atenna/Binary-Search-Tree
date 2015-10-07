@@ -88,20 +88,20 @@ public class BST {
         if(current == null) {
             return;
         }
-        inorder(current.getLeftChild());
-        //preorderList.add(current);
         System.out.println(current.getKey()+" ");
-        inorder(current.getRightChild());
+        preorder(current.getLeftChild());
+        //preorderList.add(current);
+        preorder(current.getRightChild());
     }
     
     public void postorder(Node current) {
         if(current == null) {
             return;
         }
-        inorder(current.getLeftChild());
+        postorder(current.getLeftChild());
         //postorderList.add(current);
+        postorder(current.getRightChild());
         System.out.println(current.getKey()+" ");
-        inorder(current.getRightChild());
     }
     
     public void print() {
