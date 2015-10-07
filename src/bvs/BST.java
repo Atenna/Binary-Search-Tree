@@ -79,8 +79,8 @@ public class BST {
             return;
         }
         inorder(current.getLeftChild());
-        //inorderList.add(current);
-        System.out.println(current.getKey()+" ");
+        inorderList.add(current);
+        //System.out.println(current.getKey()+" ");
         inorder(current.getRightChild());
     }
     
@@ -88,9 +88,10 @@ public class BST {
         if(current == null) {
             return;
         }
-        System.out.println(current.getKey()+" ");
+        //System.out.println(current.getKey()+" ");
+        preorderList.add(current);
         preorder(current.getLeftChild());
-        //preorderList.add(current);
+        
         preorder(current.getRightChild());
     }
     
@@ -99,9 +100,9 @@ public class BST {
             return;
         }
         postorder(current.getLeftChild());
-        //postorderList.add(current);
         postorder(current.getRightChild());
-        System.out.println(current.getKey()+" ");
+        //System.out.println(current.getKey()+" ");
+        postorderList.add(current);
     }
     
     public void printInorder() {
@@ -110,6 +111,7 @@ public class BST {
         for(int i= 0; i < inorderList.size();i++) {
             System.out.print(inorderList.get(i).getKey());
         }
+        System.out.println();
     }
     
     public void printPreorder() {
@@ -118,6 +120,7 @@ public class BST {
         for(int i= 0; i < preorderList.size();i++) {
             System.out.print(preorderList.get(i).getKey());
         }
+        System.out.println();
     }
     
     public void printPostorder() {
@@ -126,6 +129,7 @@ public class BST {
         for(int i= 0; i < postorderList.size();i++) {
             System.out.print(postorderList.get(i).getKey());
         }
+        System.out.println();
     }
     
     public boolean delete(Node a) {
