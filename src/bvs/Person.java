@@ -7,9 +7,15 @@ package bvs;
 public class Person extends Node{
 
     private final int key;
+    private final String name;
+    private final String surname;
+    private final String id_number;
     
-    public Person(int key) {
+    public Person(int key, String name, String surname, String id_number) {
         this.key = key;
+        this.name = name;
+        this.surname = surname;
+        this.id_number = id_number;
     }
     
     @Override
