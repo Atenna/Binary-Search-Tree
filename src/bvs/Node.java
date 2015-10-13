@@ -5,21 +5,27 @@ package bvs;
  * @author Carmen
  */
 public abstract class Node {
-
+    
+    private int id;
     protected Node leftChild;
     protected Node rightChild;
     
-    protected Node(Node leftChild, Node rigthChild) {
+    protected Node(int id, Node leftChild, Node rigthChild) {
+        this.id = id;
         this.leftChild = leftChild;
         this.rightChild = rigthChild;
     }
     
-    protected Node() {
-        this(null, null);
+    protected Node(int id) {
+        this(id, null, null);
+        this.id = id;
     }
     
     abstract int getKey();
-    abstract Node getGreater(Node a, Node b);
+    protected Node getGreater(Node a, Node b) {
+        return a.getKey()>b.getKey()?a:b;   
+    };
+    
     abstract boolean isGreaterThan(Node b);
     
     public Node getLeftChild() {
