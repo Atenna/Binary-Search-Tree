@@ -38,6 +38,10 @@ public abstract class Node {
         this.side = Side.LEFT;
     }
     
+    protected void setRootSide() {
+        this.side = null;
+    }
+    
     protected void setRightSide() {
         this.side = Side.RIGHT;
     }
