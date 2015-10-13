@@ -3,10 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Carmen/Documents/NetBeansProjects/BVS/src/bvs/GUI.java</file>
+            <file>file:/C:/Users/Carmen/Documents/NetBeansProjects/BVS/src/bvs/RBTree.java</file>
+            <file>file:/C:/Users/Carmen/Documents/NetBeansProjects/BVS/src/bvs/Land.java</file>
+            <file>file:/C:/Users/Carmen/Documents/NetBeansProjects/BVS/src/bvs/Estate.java</file>
             <file>file:/C:/Users/Carmen/Documents/NetBeansProjects/BVS/src/bvs/Node.java</file>
             <file>file:/C:/Users/Carmen/Documents/NetBeansProjects/BVS/src/bvs/BST.java</file>
             <file>file:/C:/Users/Carmen/Documents/NetBeansProjects/BVS/src/bvs/Person.java</file>
+            <file>file:/C:/Users/Carmen/Documents/NetBeansProjects/BVS/src/bvs/Main.java</file>
+            <file>file:/C:/Users/Carmen/Documents/NetBeansProjects/BVS/src/bvs/EquityRecord.java</file>
         </group>
     </open-files>
 </project-private>
