@@ -10,7 +10,9 @@ package bvs;
 public class EquityRecord extends Node{
     
     private final int id_record;      // primary key of equity record 
-    private int []id_land;        // foreign identification keys of lands
+    private int id_land;              // territory (land)
+    private int []id_estate;          // vsetkz nehnutelnosti na tomto liste
+    // este jeden atribut kde bude asi nejaka struktura, kde budu vsetci vlastnici plus podiely
     
     public EquityRecord(int id_record) {
         super(id_record, null, null);
